@@ -1,0 +1,28 @@
+img.blr:hover{
+    /* background-color: red;
+    color: red; */
+    backdrop-filter: blur(10px);
+filter: blur(1px);
+transition: 0.25s ease;}
+
+.container {
+    position: relative;
+    margin-top: 50px;
+    width: 500px;
+    height: 300px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+  }
+  
+  .container:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+  }
